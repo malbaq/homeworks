@@ -4,7 +4,7 @@ from collections import deque
 class CustomDict:
     def __init__(self):
         self._data = {}
-        self._history = deque(maxlen=3)
+        self._history = deque(maxlen=10)
 
     def __setitem__(self, key, value):
         self._data[key] = value
